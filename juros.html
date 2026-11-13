@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Calculadora de juros compostos: simule seus investimentos | CalcCLT</title>
+<meta name="description" content="Simule juros compostos com valor inicial, aporte mensal, taxa anual ou mensal e período em anos ou meses. Veja o total investido, os juros e a evolução do saldo.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@700;800&family=Public+Sans:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<meta name="google-adsense-account" content="ca-pub-XXXXXXXXXXXXXXXX">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX" crossorigin="anonymous"></script>
+</head>
+<body>
+<header class="top"><a class="brand" href="index.html">CalcCLT</a><nav><a href="index.html#artigos">Artigos</a><a href="index.html#calculadoras">Calculadoras</a></nav></header>
+<div class="faixa"><span class="pub">Publicidade</span><p>O dinheiro some antes do fim do mês? <strong>Veja para onde ele vai</strong> com a Planilha de Controle Financeiro Pessoal 2.0.</p><a href="https://kiwify.app/4efmrbJ?afid=MNd0aohr" target="_blank" rel="sponsored nofollow noopener">Ver planilha</a></div>
+<main>
+  <h1>Calculadora de juros compostos</h1>
+  <p class="lead">Veja quanto o seu dinheiro pode render com aportes mensais, em qualquer prazo. Resultado na hora, sem cadastro.</p>
+  <div class="grid">
+    <form id="form">
+      <div class="field"><label for="inicial">Valor inicial</label>
+        <div class="grupo"><span>R$</span><input id="inicial" type="number" min="0" step="0.01" inputmode="decimal" placeholder="0,00"></div></div>
+      <div class="field"><label for="mensal">Valor mensal</label>
+        <div class="grupo"><span>R$</span><input id="mensal" type="number" min="0" step="0.01" inputmode="decimal" placeholder="0,00"></div></div>
+      <div class="field"><label for="taxa">Taxa de juros</label>
+        <div class="grupo"><span>%</span><input id="taxa" type="number" min="0" step="0.01" inputmode="decimal" placeholder="0,00" required>
+        <select id="tipoTaxa" aria-label="Tipo de taxa"><option value="anual">Anual</option><option value="mensal">Mensal</option></select></div></div>
+      <div class="field"><label for="periodo">Período</label>
+        <div class="grupo"><input id="periodo" type="number" min="1" step="1" inputmode="numeric" placeholder="0" required>
+        <select id="tipoPeriodo" aria-label="Unidade do período"><option value="anos">Anos</option><option value="meses">Meses</option></select></div></div>
+      <button type="submit">Calcular</button>
+    </form>
+    <div class="sticky" id="resultado" aria-live="polite"><p class="msg">Preencha os campos e calcule para ver o resultado e a evolução mês a mês.</p></div>
+  </div>
+  <div class="ad" aria-label="Publicidade"><small>Publicidade</small><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-XXXXXXXXXXXXXXXX" data-ad-slot="SLOT_TOPO" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle=window.adsbygoogle||[]).push({});</script></div>
+  <section class="prose">
+    <h2>Como funcionam os juros compostos</h2>
+    <p>Nos juros compostos, os juros de cada mês são calculados sobre o saldo já acumulado, incluindo os juros anteriores. Por isso o crescimento acelera com o tempo: quanto mais longo o prazo, maior a parte do saldo que vem dos juros e não dos seus aportes.</p>
+    <p>A calculadora faz o cálculo mês a mês: o saldo rende a taxa do mês e, no fim dele, entra o valor mensal que você informou.</p>
+    <h2>Taxa anual ou mensal</h2>
+    <p>Se você informa uma taxa anual, ela é convertida para a taxa mensal equivalente, e não dividida por 12. Por exemplo, 10% ao ano equivale a cerca de 0,80% ao mês, porque os juros se acumulam.</p>
+    <h2>Exemplo</h2>
+    <p>Com R$ 1.000 de valor inicial, R$ 200 por mês, taxa de 10% ao ano e 10 anos, você investe R$ 25.000,00 e termina com cerca de R$ 42.566,51, dos quais R$ 17.566,51 são juros. A diferença entre o total investido e o saldo final mostra o efeito dos juros compostos.</p>
+    <h2>O que a simulação não considera</h2>
+    <ul>
+      <li><strong>Imposto de Renda:</strong> muitos investimentos descontam IR sobre os rendimentos, o que reduz o valor final.</li>
+      <li><strong>Inflação:</strong> o valor final é nominal, e o poder de compra de R$ 1.000 no futuro é menor que o de hoje.</li>
+      <li><strong>Taxas variáveis:</strong> a taxa real muda ao longo do tempo, e a simulação usa uma taxa fixa.</li>
+    </ul>
+    <p class="note" style="padding-left:0">Simulação informativa, sem recomendação de investimento. Rentabilidade passada não garante resultado futuro.</p>
+  </section>
+  <aside class="oferta" aria-label="Publicidade">
+<p class="pub">Publicidade: link de afiliado</p>
+<h3>O dinheiro cai na conta e some antes do fim do mês?</h3>
+<p class="sub">Pare de adivinhar para onde ele foi. Com a Planilha de Controle Financeiro Pessoal 2.0, você vê tudo em um só lugar.</p>
+<ul>
+<li>Veja quanto do seu salário já está comprometido no mês</li>
+<li>Importe a fatura do cartão e o extrato do banco, sem digitar tudo</li>
+<li>Acompanhe quais contas fixas ainda faltam pagar</li>
+<li>Lance uma compra parcelada uma vez e veja as parcelas nos meses seguintes</li>
+</ul>
+<a class="btn" href="https://kiwify.app/4efmrbJ?afid=MNd0aohr" target="_blank" rel="sponsored nofollow noopener">Quero organizar meu dinheiro</a>
+<p class="micro">Planilha em Excel. Pagamento único, acesso vitalício e garantia de 7 dias informada pelo produtor. Se você comprar por este link, o CalcCLT recebe uma comissão, sem custo extra para você.</p>
+</aside>
+<div class="ad" aria-label="Publicidade"><small>Publicidade</small><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-XXXXXXXXXXXXXXXX" data-ad-slot="SLOT_FIM" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle=window.adsbygoogle||[]).push({});</script></div>
+</main>
+<footer><nav class="foot"><a href="sobre.html">Sobre</a><a href="contato.html">Contato</a><a href="privacidade.html">Política de Privacidade</a><a href="termos.html">Termos de uso</a></nav><p>CalcCLT. Conteúdo informativo, sem aconselhamento jurídico. Cálculos estimados com as tabelas de 2026.</p></footer>
+<script src="cookies.js" defer></script>
+<script src="tabelas.js"></script>
+<script src="juros.js"></script>
+</body>
+</html>

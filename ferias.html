@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Calculadora de férias 2026: valor líquido com INSS e IR</title>
+<meta name="description" content="Calcule suas férias CLT em 2026: 1/3 constitucional, abono pecuniário, faltas, INSS e Imposto de Renda com a nova isenção até R$ 5.000.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@700;800&family=Public+Sans:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<!-- Depois de ter domínio próprio: adicione aqui o script do AdSense e a tag canonical -->
+<meta name="google-adsense-account" content="ca-pub-XXXXXXXXXXXXXXXX">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX" crossorigin="anonymous"></script>
+</head>
+<body>
+<header class="top"><a class="brand" href="index.html">CalcCLT</a><nav><a href="index.html#artigos">Artigos</a><a href="index.html#calculadoras">Calculadoras</a></nav></header>
+<div class="faixa"><span class="pub">Publicidade</span><p>O dinheiro some antes do fim do mês? <strong>Veja para onde ele vai</strong> com a Planilha de Controle Financeiro Pessoal 2.0.</p><a href="https://kiwify.app/4efmrbJ?afid=MNd0aohr" target="_blank" rel="sponsored nofollow noopener">Ver planilha</a></div>
+<main>
+  <h1>Calculadora de férias 2026</h1>
+  <p class="lead">Descubra quanto você recebe de férias, já com o adicional de 1/3, o desconto de INSS e o Imposto de Renda de 2026.</p>
+
+  <div class="grid">
+    <form id="form">
+      <div class="field">
+        <label for="salario">Salário bruto mensal (R$)</label>
+        <input id="salario" type="number" min="0" step="0.01" inputmode="decimal" required>
+      </div>
+      <div class="field">
+        <label for="variavel">Média de horas extras e comissões (R$)</label>
+        <input id="variavel" type="number" min="0" step="0.01" inputmode="decimal" placeholder="0,00">
+        <p class="hint">Deixe em branco se o seu salário é fixo.</p>
+      </div>
+      <div class="field">
+        <label for="faltas">Faltas injustificadas no ano</label>
+        <select id="faltas">
+          <option value="30">Até 5 faltas (30 dias)</option>
+          <option value="24">De 6 a 14 faltas (24 dias)</option>
+          <option value="18">De 15 a 23 faltas (18 dias)</option>
+          <option value="12">De 24 a 32 faltas (12 dias)</option>
+          <option value="0">Mais de 32 faltas</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="dependentes">Dependentes no Imposto de Renda</label>
+        <input id="dependentes" type="number" min="0" step="1" value="0">
+      </div>
+      <div class="field check">
+        <input id="abono" type="checkbox">
+        <label for="abono">Vender 1/3 das férias (abono pecuniário)</label>
+      </div>
+      <button type="submit">Calcular férias</button>
+    </form>
+
+    <div class="sticky" id="resultado" aria-live="polite">
+      <p class="msg">Preencha o salário e calcule para ver o recibo aqui.</p>
+    </div>
+  </div>
+
+  <div class="ad" aria-label="Publicidade"><small>Publicidade</small><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-XXXXXXXXXXXXXXXX" data-ad-slot="SLOT_TOPO" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle=window.adsbygoogle||[]).push({});</script></div>
+
+  <section class="prose">
+    <h2>Como o cálculo é feito</h2>
+    <p>O valor das férias é o salário dividido por 30, multiplicado pelos dias de descanso. A esse valor soma-se 1/3 constitucional. Se você vende parte das férias, o abono pecuniário também recebe o adicional de 1/3 e não sofre desconto de INSS nem de Imposto de Renda.</p>
+    <p>O INSS é progressivo e incide sobre férias mais 1/3. Em 2026 as alíquotas são de 7,5% a 14%, com teto de contribuição em R$ 8.475,55.</p>
+    <table>
+      <tr><th>Faixa do INSS 2026</th><th>Alíquota</th></tr>
+      <tr><td>Até R$ 1.621,00</td><td>7,5%</td></tr>
+      <tr><td>De R$ 1.621,01 a R$ 2.902,84</td><td>9%</td></tr>
+      <tr><td>De R$ 2.902,85 a R$ 4.354,27</td><td>12%</td></tr>
+      <tr><td>De R$ 4.354,28 até R$ 8.475,55</td><td>14%</td></tr>
+    </table>
+    <p>No Imposto de Renda, a Lei 15.270/2025 zera o imposto retido para rendimentos mensais de até R$ 5.000 e cria um desconto decrescente até R$ 7.350. Esta calculadora usa o desconto simplificado ou o INSS, o que for maior, e R$ 189,59 por dependente.</p>
+
+    <h2>Perguntas frequentes</h2>
+    <h3>Quantos dias de férias eu tenho direito?</h3>
+    <p>São 30 dias após 12 meses de trabalho, reduzidos conforme as faltas injustificadas: 24 dias com 6 a 14 faltas, 18 com 15 a 23 e 12 com 24 a 32.</p>
+    <h3>Quanto posso vender das minhas férias?</h3>
+    <p>Até um terço dos dias a que você tem direito, o que dá 10 dias quando são 30.</p>
+    <h3>Quando as férias são pagas?</h3>
+    <p>O pagamento deve ser feito até 2 dias antes do início do descanso.</p>
+    <p class="note" style="padding-left:0">Resultado estimado, sem valor de cálculo oficial. Tabelas de 2026; confira o valor exato com o departamento pessoal da sua empresa.</p>
+  </section>
+<aside class="oferta" aria-label="Publicidade">
+<p class="pub">Publicidade: link de afiliado</p>
+<h3>O dinheiro cai na conta e some antes do fim do mês?</h3>
+<p class="sub">Pare de adivinhar para onde ele foi. Com a Planilha de Controle Financeiro Pessoal 2.0, você vê tudo em um só lugar.</p>
+<ul>
+<li>Veja quanto do seu salário já está comprometido no mês</li>
+<li>Importe a fatura do cartão e o extrato do banco, sem digitar tudo</li>
+<li>Acompanhe quais contas fixas ainda faltam pagar</li>
+<li>Lance uma compra parcelada uma vez e veja as parcelas nos meses seguintes</li>
+</ul>
+<a class="btn" href="https://kiwify.app/4efmrbJ?afid=MNd0aohr" target="_blank" rel="sponsored nofollow noopener">Quero organizar meu dinheiro</a>
+<p class="micro">Planilha em Excel. Pagamento único, acesso vitalício e garantia de 7 dias informada pelo produtor. Se você comprar por este link, o CalcCLT recebe uma comissão, sem custo extra para você.</p>
+</aside>
+<div class="ad" aria-label="Publicidade"><small>Publicidade</small><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-XXXXXXXXXXXXXXXX" data-ad-slot="SLOT_FIM" data-ad-format="auto" data-full-width-responsive="true"></ins><script>(adsbygoogle=window.adsbygoogle||[]).push({});</script></div>
+</main>
+<footer><nav class="foot"><a href="sobre.html">Sobre</a><a href="contato.html">Contato</a><a href="privacidade.html">Política de Privacidade</a><a href="termos.html">Termos de uso</a></nav><p>CalcCLT. Conteúdo informativo, sem aconselhamento jurídico. Cálculos estimados com as tabelas de 2026.</p></footer>
+<script src="cookies.js" defer></script>
+<script src="tabelas.js"></script>
+<script src="ferias.js"></script>
+</body>
+</html>
